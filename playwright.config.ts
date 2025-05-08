@@ -1,36 +1,28 @@
-import { defineConfig } from "@playwright/test";
+import type { PlaywrightTestConfig } from "@playwright/test";
+import { devices } from "@playwright/test";
+import * as dotenv from "dotenv";
 
-export default defineConfig({
-  testDir: "./tests",
-  use: {
-    headless: true,
-    screenshot: "only-on-failure",
-    video: "retain-on-failure",
-    trace: "on-first-retry",
-  },
-  retries: 1,
-  workers: 3,
+dotenv.config();
+
+const config: PlaywrightTestConfig = {
+  testDir: "tests",
+  timeout: 60_000,
+  use: {},
+  workers: 1,
   projects: [
     {
-      name: "Chromium",
+      name: "MicrosoftEdge:latest:MacOS Ventura@lambdatest",
       use: {
-        browserName: "chromium",
-        viewport: { width: 1280, height: 800 },
+        ...devices["iPhone 12 Pro Max"],
       },
     },
     {
-      name: "Firefox",
+      name: "Chrome:latest:Windows 10@lambdatest",
       use: {
-        browserName: "firefox",
-        viewport: { width: 1280, height: 800 },
-      },
-    },
-    {
-      name: "Webkit",
-      use: {
-        browserName: "webkit",
-        viewport: { width: 1280, height: 800 },
+        viewport: { width: 1280, height: 720 },
       },
     },
   ],
-});
+};
+
+export default config;

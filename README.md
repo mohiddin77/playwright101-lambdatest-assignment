@@ -8,18 +8,32 @@ This repository contains the solution for the **Playwright 101** certification a
 2. **Drag & Drop Sliders** – Adjust the slider to a specific value and validate it.
 3. **Input Form Submit** – Submit a form both empty and filled, verifying validation and success messages.
 
-## 🚀 Open in Gitpod
+## 🚀 Setup
 
-Click the button below to launch this project in Gitpod with a ready-to-use Playwright environment:
+1. Install dependencies:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hernandosebastian/playwright101-lambdatest-assignment)
+```bash
+npm install
+```
+
+2. Configure LambdaTest credentials:
+
+- Use the `.env.dist` template file by renaming it to `.env` and adding your credentials:
+
+```
+LT_USERNAME=your_lambdatest_username
+LT_ACCESS_KEY=your_lambdatest_access_key
+```
+
+> [!IMPORTANT]  
+> Replace with your actual LambdaTest username and access key
 
 ## ▶️ How to Run Tests
 
-Once the environment is ready, run:
+Run tests on LambdaTest:
 
 ```bash
-npx playwright test
+npm run test
 ```
 
 ## 📋 Project Requirements
@@ -34,9 +48,10 @@ npx playwright test
 
 ```bash
 npm install        # Install dependencies
-npx playwright test # Run all tests
+npm run test       # Run all tests on LambdaTest
 ```
 
 ## 👤 Author
 
-\[https://github.com/hernandosebastian] – Certification Project for LambdaTest
+[https://github.com/hernandosebastian] – Certification Project for LambdaTest
+

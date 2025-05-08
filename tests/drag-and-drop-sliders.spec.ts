@@ -1,4 +1,5 @@
-import { test, expect, Page, Locator } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
+import test from "../lambdatest-setup";
 
 async function dragSliderToValue(
   page: Page,
