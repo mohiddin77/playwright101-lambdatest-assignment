@@ -1,4 +1,5 @@
-import { test, expect } from "@playwright/test";
+import { expect } from "@playwright/test";
+import test from "../lambdatest-setup";
 
 test("Input Form Submit - displays correct message", async ({ page }) => {
   await page.goto("https://www.lambdatest.com/selenium-playground");
