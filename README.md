@@ -24,7 +24,7 @@ npm run test         # Run all tests on LambdaTest
 npm run test:local   # Run all tests locally
 ```
 
-## 🚀 Setup
+## 🚀 Setup <a name="setup"></a>
 
 1. Install dependencies:
 
@@ -64,22 +64,12 @@ Select the button below to try this demo in Gitpod:
 
 [<img alt="Run in Gitpod" width="200px" align="center" src="https://user-images.githubusercontent.com/70570645/169987363-1408c494-4e2a-4f12-8828-c931eac716b0.png" />](https://gitpod.io/#https://github.com/hernandosebastian/playwright101-lambdatest-assignment)
 
-After the Gitpod session launches, set your LambdaTest credentials as environment variables:
+After the Gitpod session launches:
 
-```bash
-eval $(gp env -e LT_USERNAME=******)
-eval $(gp env -e LT_ACCESS_KEY=******)
-```
+1. Follow the [Setup instructions](#setup) section above to configure your environment
+2. Make sure to rename `.env.dist` to `.env` and add your LambdaTest credentials as shown in the Setup section
 
-If you're unsure how to access your LambdaTest credentials, check [this guide](https://www.lambdatest.com/support/docs/using-environment-variables-for-authentication-credentials/).
-
-If you start a new terminal in Gitpod, run this command to reset the environment variables:
-
-```bash
-eval $(gp env -e)
-```
-
-For more information, refer to [Gitpod documentation](https://www.gitpod.io/docs/environment-variables).
+For more information on LambdaTest credentials, check [this guide](https://www.lambdatest.com/support/docs/using-environment-variables-for-authentication-credentials/).
 
 ## 👤 Author
 
